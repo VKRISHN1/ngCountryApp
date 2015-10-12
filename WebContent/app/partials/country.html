@@ -1,0 +1,30 @@
+<section id="main">
+  <a href="./#/countries"><font size="4"><b> Back to Countries list</a></b></font> <br/><br/>
+  <nav id="secondary" class="main-nav">
+  <table>
+  <tr>Country Details of {{country.countryName}}</th></tr>
+  </thead>
+<tr>
+<td>
+   <div class="driver-picture">
+      <div class="avatar">
+        <img data-ng-show="country" src="img/flags/big/{{country.countryName}}.png" /><br/>
+        {{country.countryName}} {{country.continentName}}
+      </div>
+     </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <div class="driver-status">
+      <b>Country:</b> {{country.countryName}}   <br/>
+      <b>Capital City:</b> {{country.capital}} <br/>
+      <b>Continent:</b>{{country.continentName}}<br/>
+      <b>Population:</b>{{country.population}}<br/>
+      <!-- a href="{{driver.Driver.url}}" target="_blank">Biography</a>-->
+    </div>
+    </td>
+    </tr>
+      </table>
+  </nav>
+  </section>
